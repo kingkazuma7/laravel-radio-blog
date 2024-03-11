@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>@yield('title', '番組一覧ページ')</title>
-
-    <!-- CSS -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title', '記事一覧')</title>
 </head>
 <body>
-    <div id="app">
+    <main>
         @yield('content')
-    </div>
-
-    <!-- JavaScript -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    </main>
+    <footer>
+        <p>© 2024 Example Inc. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
