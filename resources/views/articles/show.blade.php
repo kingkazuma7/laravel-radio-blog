@@ -8,6 +8,5 @@
       <div>{!! nl2br(e($article->body)) !!}</div>
       <div><a href="{{ route('articles.edit', $article) }}">編集(articles.edit)</a></div>
     </article>
-    <p><a href="{{ route('articles.index') }}">一覧(articles.index)</a></p>
-    <p><a href="{{ route('articles.create') }}">記事を書く(articles.create)</a></p>
+    @include('commons.links')
 @endsection
