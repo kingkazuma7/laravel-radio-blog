@@ -48,7 +48,8 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        $data = ['article' => $article];
+        return view('articles.show', $data);
     }
 
     /**
