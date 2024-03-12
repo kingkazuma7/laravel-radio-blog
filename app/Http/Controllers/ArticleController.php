@@ -44,7 +44,7 @@ class ArticleController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * 詳細画面
      */
     public function show(Article $article)
     {
@@ -53,7 +53,7 @@ class ArticleController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * 編集画面
      */
     public function edit(Article $article)
     {
@@ -62,7 +62,7 @@ class ArticleController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * 更新処理
      */
     public function update(Request $request, Article $article)
     {
