@@ -8,5 +8,5 @@
       <div>{{ $article->body }}</div>
     </article>
     @endforeach
-    <a href="{{ route('articles.create') }}">記事を書く(articles.create)</a>
+    @include('commons.links')
 @endsection
